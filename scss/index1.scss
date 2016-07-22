@@ -1,0 +1,46 @@
+@import "public";
+
+
+.input1{
+	span{
+		color:#9c9c9c;
+		@include pos();
+		small{
+			display:block;
+			@include pos();
+			top:18px;
+			font-size:8px;
+			color:#7e9ce7;
+		}
+	}
+}
+
+
+.footer{
+	width:100%;
+	padding:0 40px;
+	margin-top:40px;
+	color:#9c9c9c;
+	h2{
+		font-size:18px;
+		line-height:30px;
+		height:30px;
+	}
+	h3{
+		font-size:16px;
+		height:40px;
+		line-height:40px;
+		em{
+			width:10px;
+			height:10px;
+			background:#eeeeee;
+			display:inline-block;
+			border-rdius:5px;
+			margin-right:10px;
+		}
+	}
+	p{
+		padding-left:18px;
+		line-height:30px;
+	}
+}

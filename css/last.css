@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+input::-webkit-input-placeholder {
+  color: #666; }
+
+input {
+  color: #666; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; }
+
+.main {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding-top: 10px; }
+
+.deng {
+  width: 100%;
+  height: 45px;
+  border: none;
+  margin: 0 auto;
+  background: #CCCCCC;
+  border-radius: 20px;
+  margin-top: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 45px; }
+
+/*-------------------------------------------*/
+.index {
+  padding-top: 30px;
+  position: relative; }
+  .index p {
+    line-height: 45px; }
+    .index p a {
+      color: white; }
+    .index p:first-child input {
+      width: 100%; }
+    .index p input {
+      border: none;
+      outline: none;
+      width: 60%;
+      border-bottom: 1px solid #Ccc;
+      font-size: 16px;
+      height: 45px; }
+    .index p span {
+      float: right;
+      width: 40%;
+      text-align: center;
+      color: #5E83E1; }
+    .index p:nth-of-type(3) {
+      margin-top: 40px; }
+  .index .p {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background: #Ccc;
+    color: white;
+    text-align: center;
+    margin: 20px 0; }
+  .index .login {
+    background: #5E83E1; }
+  .index small {
+    text-align: center;
+    color: #5E83E1;
+    width: 100%;
+    display: block;
+    font-size: 14px; }
+    .index small span {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background: url("../img/wen.png") no-repeat bottom;
+      position: relative;
+      top: 5px; }
+  .index .bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 5%; }
+    .index .bottom p {
+      line-height: 20px;
+      color: #666;
+      text-align: center; }
+    .index .bottom a {
+      width: 20px;
+      height: 40px;
+      display: inline-block;
+      background: url("../img/right.png") no-repeat left bottom;
+      position: relative;
+      top: 2px; }
+
+/*-------------------------------------------*/
+.register {
+  padding-top: 30px; }
+  .register form p {
+    line-height: 45px; }
+    .register form p:nth-of-type(1) input {
+      width: 100%; }
+    .register form p input {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #Ccc;
+      font-size: 16px;
+      height: 45px;
+      width: 60%; }
+    .register form p input + span {
+      float: right;
+      width: 40%;
+      text-align: center;
+      color: #5E83E1;
+      height: 45px;
+      position: relative; }
+      .register form p input + span img {
+        width: 90px;
+        margin-top: 5px; }
+      .register form p input + span small {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        bottom: -20px; }
+  .register form .p {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background: #Ccc;
+    text-align: center;
+    margin: 40px 0;
+    line-height: 40px; }
+    .register form .p a {
+      color: white; }
+  .register .bottom {
+    color: #666;
+    line-height: 25px; }
+    .register .bottom p {
+      padding-left: 20px; }
+    .register .bottom h3 {
+      font-weight: normal; }
+    .register .bottom .p {
+      background: url("../img/square.png") no-repeat left;
+      margin-top: 10px; }
+
+/*-----------------------------------------*/
+.tab {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  padding-bottom: 100px; }
+  .tab .top {
+    height: 100px;
+    border-bottom: 10px solid #eee;
+    position: relative; }
+    .tab .top h3 {
+      line-height: 50px;
+      text-align: center;
+      color: #6C6C6C; }
+    .tab .top ul {
+      height: 40px;
+      width: 80%;
+      border-top: 1px solid #eee;
+      position: absolute;
+      bottom: 3px;
+      left: 10%;
+      font-size: 14px; }
+      .tab .top ul li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        line-height: 40px;
+        border-bottom: 2px solid transparent; }
+        .tab .top ul li.active {
+          border-bottom: 2px solid #84A1E8; }
+        .tab .top ul li a {
+          color: #B9B9B9; }
+  .tab .bottom {
+    -webkit-flex-grow: 1;
+    padding: 0 10%;
+    overflow-y: auto;
+    padding-top: 10px; }
+    .tab .bottom .page1 li {
+      padding-top: 20px;
+      padding-bottom: 10px; }
+      .tab .bottom .page1 li:nth-of-type(2) {
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee; }
+      .tab .bottom .page1 li h3 {
+        color: #6C6C6C; }
+      .tab .bottom .page1 li p {
+        color: #B9B9B9;
+        line-height: 22px; }
+    .tab .bottom .page2 {
+      line-height: 40px;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .tab .bottom .page2 h4 {
+        color: #6C6C6C; }
+      .tab .bottom .page2 p {
+        height: 40px;
+        color: #B9B9B9;
+        border-bottom: 1px solid #eee; }
+      .tab .bottom .page2 li {
+        float: left;
+        width: 45%;
+        margin-right: 10%;
+        margin-bottom: 10px;
+        height: 40px;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid #84A1E8;
+        color: #666; }
+        .tab .bottom .page2 li:nth-of-type(2n) {
+          margin-right: 0; }
+      .tab .bottom .page2 .btn {
+        position: absolute;
+        bottom: 110px;
+        width: 80%; }
+    .tab .bottom .page3 h4 {
+      line-height: 35px;
+      height: 35px;
+      border-bottom: 1px solid #eee;
+      color: #6C6C6C; }
+      .tab .bottom .page3 h4 span {
+        float: right;
+        color: #84A1E8; }
+    .tab .bottom .page3 ul {
+      padding: 10px 0; }
+      .tab .bottom .page3 ul li {
+        line-height: 20px;
+        color: #B9B9B9;
+        background: url("../img/square.png") no-repeat left;
+        padding-left: 20px; }
+        .tab .bottom .page3 ul li span {
+          float: right; }
+    .tab .bottom .page3 small {
+      font-size: 12px;
+      color: #84A1E8;
+      margin: 20px 0;
+      display: block;
+      line-height: 20px; }
+    .tab .bottom .page4 h4 {
+      line-height: 40px;
+      height: 40px;
+      border-bottom: 1px solid #eee;
+      color: #6C6C6C; }
+    .tab .bottom .page4 p {
+      line-height: 40px; }
+    .tab .bottom .page4 ul {
+      padding: 10px 0; }
+      .tab .bottom .page4 ul li {
+        line-height: 20px;
+        color: #B9B9B9;
+        background: url("../img/square.png") no-repeat left;
+        padding-left: 20px; }
+    .tab .bottom .page4 .btn {
+      position: absolute;
+      bottom: 110px;
+      width: 80%; }
+
+.tab-hide {
+  width: 100%;
+  height: 100px;
+  background: #EEEEEE;
+  position: absolute;
+  bottom: 0;
+  color: #ABABAB;
+  padding: 20px 10%;
+  font-size: 12px;
+  line-height: 20px; }
+
+/*# sourceMappingURL=last.css.map */

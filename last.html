@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>杨计梅</title>
+    <link rel="stylesheet" href="css/last.css">
+</head>
+<body>
+    <div ng-view class='container'>
+    	<div class="main tab">
+    		<div class="top">
+    			<h3>账户余额：152.00元</h3>
+    			<ul class='top_ul'>
+    				<li class='active'>用户查询</li>
+    				<li>话费充值</li>
+    				<li>当月话费</li>
+    				<li>个人中心</li>
+    			</ul>
+    		</div>
+    		<div class="bottom">
+    			<div class="page page1">
+    				<ul>
+    					<li>
+    						<h3>流量</h3>
+    						<p>本月已使用套餐内流量12.25GB，剩余37.75MB;</p>
+    						<p>问问激活专享流量已使用0MB，剩余100MB</p>
+    					</li>
+    					<li>
+    						<h3>语音通话</h3>
+    						<p>本月已使用套餐内语音通话23分钟，剩余7分钟</p>
+    					</li>
+    					<li>
+    						<h3>短信</h3>
+    						<p>本月已发送14条点对点短信</p>
+    					</li>
+    				</ul>
+    			</div>
+    			<div class="page page2">
+    				<p>充值手机号码</p>
+    				<h4>充值金额</h4>
+    				<ul>
+    					<li>50元</li>
+    					<li>100元</li>
+    					<li>200元</li>
+    					<li>500元</li>
+    				</ul>
+    				<div class="deng btn">立即充值</div>
+    			</div>
+    			<div class="page page3">
+    				<h4>月基本费<span>14.9元</span></h4>
+    				<ul>
+    					<li>基本月租<span>9.9元</span></li>
+    					<li>来电显示<span>5.0元</span></li>
+    				</ul>
+    				<h4>增值业务<span>2.9元</span></h4>
+    				<ul>
+    					<li>点对点短信<span>0.3元</span></li>
+    					<li>数据流量<span>2.6元</span></li>
+    				</ul>
+    				<h4>语音通话<span>3.2元</span></h4>
+    				<h4>合计应缴<span>21.0元</span></h4>
+    				<small>特别提醒：如果您欠费后90天内未充值，您的号码将作销号处理</small>
+    			</div>
+    			<div class="page page4">
+    				<h4>我的套餐</h4>
+    				<p>9.9元月租套餐</p>
+    				<ul>
+    					<li>9.9元月租</li>
+    					<li>30分钟通话</li>
+    					<li>50MB流量</li>
+    					<li>超出30分钟部分，主叫0.15元/分钟</li>
+    					<li>超出50MB流量部分，0.15/MB</li>
+    				</ul>
+    				<div class="deng btn">立即充值</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="tab-hide">
+    		<p>注：本页数据仅供参考，更多详情请登录民生通讯官方</p>
+    		<p>网站：www.ms170.com进行查询</p>
+    		<p>民生通讯官方客服：400-6509170</p>
+    	</div>
+    </div>
+    <script src='js/jquery.js'></script>
+    <script>
+        $('.bottom .page').eq(0).show().siblings().hide()
+        $('.top_ul li').on('click',function(){
+            $(this).addClass('active').siblings().removeClass()
+            var idx=$(this).index()
+            $('.bottom .page').eq(idx).show().siblings().hide()
+        })
+    </script>
+</body>
+<html>
+
